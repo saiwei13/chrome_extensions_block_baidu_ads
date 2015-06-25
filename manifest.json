@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "屏蔽百度推广",
+    "version": "1.0",
+    "description": "描述：屏蔽百度推广",
+    "content_scripts": [
+        {
+//            "matches": ["*://www.google.com.hk/*"],
+//            "matches": ["http://*/*"],
+            "matches": ["*://www.baidu.com/*"],
+            "js": ["js/block_ads.js"]
+//            "run_at": "document_end"
+        }
+    ]
+}
