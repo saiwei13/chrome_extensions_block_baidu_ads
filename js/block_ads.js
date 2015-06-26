@@ -4,7 +4,7 @@ var x;
  * 屏蔽右侧广告
  */
 function block_right_ads(){
-    //console.log("block_right_ads()")
+    console.log("block_right_ads()")
 
     x = document.getElementById('ec_im_container')
 	if(x != null) x.parentNode.removeChild(x);

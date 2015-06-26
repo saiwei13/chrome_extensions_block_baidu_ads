@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "屏蔽百度推广",
-    "version": "1.4.5",
+    "version": "1.5.1",
     "description": "描述：屏蔽百度推广",
     "icons": {
         "16": "images/icon16.png",
@@ -13,25 +13,12 @@
             "19": "images/icon19.png",
             "38": "images/icon38.png"
         },
-        "default_title": "查看我的IP",
-        "default_popup": "popup.html"
-    }
-//    ,
-//    "content_scripts": [
-//        {
-//            "matches": ["*://www.baidu.com/*"],
-//            "js": ["js/block_ads.js"]
-//        }
-//    ],
-
-//    "background": {
-//        "scripts": [
-//            "js/status.js"
-//        ]
-//    }
-
-//    ,
-//    "permissions": [
-//        "https://www.google.com.hk/?gws_rd=ssl"
-//    ]
+        "default_title": "block baidu ads",
+        "default_popup": "html/popup.html"
+    },
+    "background": {
+		"page": "/html/background.html",
+		"persistent": false
+	},
+	"permissions": ["tabs","http://*/*","https://*/*"]
 }
