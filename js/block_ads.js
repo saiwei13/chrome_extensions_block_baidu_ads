@@ -51,7 +51,7 @@ setTimeout(function(){
 	block_left_top_ads();
 	block_left_bottom_ads();
 
-},1000);
+},100);
 
 
 

@@ -1,12 +1,15 @@
 
 version xx:
--bug: 只有刷新页面的时候，插件才有效果，点击下一页的时候，插件没反应
--TODO： 需要使用 background  后台运行
-- create icon
-- create log
 - 在android手机是否也可以屏蔽？
 
 -------------------------------------------------------------
+
+version 1.5.3
+- 提高响应时间
+
+version 1.5.2
+- 更换icon
+
 version 1.5.1
 - 使用 background
 - 修改bug: 百度搜索翻页不会屏蔽广告的问题
