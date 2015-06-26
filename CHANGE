@@ -4,9 +4,11 @@ version xx:
 -TODO： 需要使用 background  后台运行
 - create icon
 - create log
+- 在android手机是否也可以屏蔽？
 
 -------------------------------------------------------------
-
+version 1.4.5
+-  增加null判断
 
 version 1.4.4
 - 优化屏蔽左下广告
