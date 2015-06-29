@@ -1,8 +1,44 @@
 
 version xx:
 - 在android手机是否也可以屏蔽？
+- 刚刚自己测试了一下，基本可以用了，还有些小bug
+- bug : 当点击下一页，推广链接没消失
+  原因：　１）先调用脚本，　可是网页还没跳转过去，节点找不到
+  　     ２）　调用脚本的时机问题
 
 -------------------------------------------------------------
+
+version 1.5.18
+- bug : 当点击下一页，推广链接没消失
+  原因：　１）先调用脚本，　可是网页还没跳转过去，节点找不到
+  　     ２）　调用脚本的时机问题
+  处理：　轮询指定次数
+
+
+version 1.5.5 [TODO: 无效]
+- 屏蔽http://play.baidu.com/ 右侧的广告
+
+version 1.5.4  [TODO]
+- 更改文件夹名 js----> scripts
+参考：https://developer.chrome.com/native-client/devguide/distributing
+|-- my_app_directory/
+|       |-- manifest.json
+|       |-- my_app.html
+|       |-- my_module.nmf
+|       +-- css/
+|       +-- images/
+|       +-- scripts/
+|       |-- _platform_specific/
+|       |       |-- x86-64/
+|       |       |       |-- my_module_x86_64.nexe
+|       |       |-- x86-32/
+|       |       |       |-- my_module_x86_32.nexe
+|       |       |-- arm/
+|       |       |       |-- my_module_arm.nexe
+|       |       |-- all/
+|       |       |       |-- my_module_x86_64.nexe
+|       |       |       |-- my_module_x86_64.nexe
+|       |       |       |-- my_module_x86_32.nexe
 
 version 1.5.3
 - 提高响应时间
