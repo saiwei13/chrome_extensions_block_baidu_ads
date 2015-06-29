@@ -101,7 +101,20 @@ function block_left_bottom_ads(){
     } else{
         //console.log('5001 null')
     }
+}
 
+/**
+ * 屏蔽“百安装百度杀毒确保软件安全”的提示
+ */
+function block_baidu_soft_bind_tip(){
+    x = document.getElementsByClassName('op-soft-checkbox')[0]
+    //console.log('type='+type(x))
+    //console.log('defaultChecked='+ x.defaultChecked)
+    if(x.checked == false){
+        return;
+    }
+    console.log('x.checked='+ x.checked)
+    if(x != null) x.click();
 }
 
 //console.log("document.documentElement=",(document.documentElement==null))
@@ -126,6 +139,7 @@ function block_ads(){
     block_right_ads();
 	block_left_top_ads();
 	block_left_bottom_ads();
+    block_baidu_soft_bind_tip();
     t = window.setTimeout(block_ads, 300)
 }
 
