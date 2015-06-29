@@ -110,11 +110,13 @@ function block_baidu_soft_bind_tip(){
     x = document.getElementsByClassName('op-soft-checkbox')[0]
     //console.log('type='+type(x))
     //console.log('defaultChecked='+ x.defaultChecked)
-    if(x.checked == false){
+    if(x != null){
+        if(x.checked == false){
         return;
+        }
+        console.log('x.checked='+ x.checked)
+        x.click();
     }
-    console.log('x.checked='+ x.checked)
-    if(x != null) x.click();
 }
 
 //console.log("document.documentElement=",(document.documentElement==null))
