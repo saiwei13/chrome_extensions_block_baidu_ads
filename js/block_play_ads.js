@@ -11,7 +11,7 @@ var t;
  */
 function block_baidu_play_ads(){
 
-    console.log("block_baidu_play_ads() count＝"+count)
+    //console.log("block_baidu_play_ads() count＝"+count)
 
     count++;
 

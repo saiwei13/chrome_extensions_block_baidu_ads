@@ -104,6 +104,27 @@ function block_left_bottom_ads(){
 }
 
 /**
+ * 屏蔽 [推广]　　【推广　评价】
+ * 关键字：　百度搜　域名注册，网站建设
+ */
+function block_300x_ads(){
+
+    //console.log("block_left_bottom_ads()")
+
+    var tmp = ['3001','3002','3003','3004','3005','3006','3007','3008']
+
+    for(var i=0;i<tmp.length;i++){
+        x = document.getElementById(tmp[i])
+
+        if(x != null) {
+            x.parentNode.removeChild(x);
+        } else {
+            break;
+        }
+    }
+}
+
+/**
  * 屏蔽“百安装百度杀毒确保软件安全”的提示
  */
 function block_baidu_soft_bind_tip(){
@@ -132,7 +153,7 @@ function block_ads(){
 
     count++;
 
-    console.log("block_ads()  count="+count)
+    //console.log("block_ads()  count="+count)
 
     if(count>12){
         return;
@@ -142,6 +163,7 @@ function block_ads(){
 	block_left_top_ads();
 	block_left_bottom_ads();
     block_baidu_soft_bind_tip();
+    block_300x_ads();
     t = window.setTimeout(block_ads, 300)
 }
 
@@ -150,7 +172,7 @@ if(t != null){
 }
 
 setTimeout(function(){
-    console.log("time: "+new Date())
+    //console.log("time: "+new Date())
 	block_ads()
 },300);
 
